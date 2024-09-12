@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Management of soldiers</title>
+</head>
+<body>
+        <h1>BATTALION FORCE MANAGMENT</h1>
+
+        <div class="GreenLine"></div>
+
+        <div id="addDiv">
+            <input type="text" id="name" placeholder="Full Name">
+            <input type="text" id="rank" placeholder="Rank">
+            <input type="text" id="position" placeholder="Position">
+            <input type="text" id="platoon" placeholder="Platoon">
+            <input type="text" id="missionTime" placeholder="Mission Time (seconds)">
+            <select id="status">
+                <option value="Active">Active</option>
+                <option value="Reserve">Reserve</option>
+                <option value="Retired">Retired</option>
+            </select>
+            <button id="addButton">Add Perssonel</button>
+        </div>
+
+        <div id="FORCESDiv">
+            <p>FORCES OVERVIEW</p>
+        </div>
+
+        <div class="GreenLine"></div>
+
+        <table class="Personlist" dir="rtl">
+            <tr>
+                <th>ACTIONS</th>
+                <th>STATUS</th>  
+                <th>PLATOON</th>
+                <th>POSITION</th>
+                <th>RANK</th>
+                <th>
+                    <button id="filter">! Full Name</button>
+                </th>
+            </tr>
+            <tbody id="soldierslist">
+
+            </tbody>
+        </table>
+
+    <div id="PopUpDiv">
+        <div class="popupChilde">
+            <h1>EDIT PERSONNEL</h1>
+            <div class="GreenLine"></div>
+
+            <div id="editDiv">
+                <input type="text" id="new-task" placeholder="Full Name">
+                <input type="text" id="new-task" placeholder="Rank">
+                <input type="text" id="new-task" placeholder="Position">
+                <input type="text" id="new-task" placeholder="Platoon">
+                <input type="text" id="new-task" placeholder="Mission Time (seconds)">
+                <select>
+                    <option value="Active">Active</option>
+                    <option value="Reserve">Reserve</option>
+                    <option value="Retired">Retired</option>
+                </select>
+
+                <button id="save">Save Changes</button>
+                <button id="cancel">Cancel</button>
+            </div>    
+            
+        </div>
+    </div>
+</body>
+</html>
